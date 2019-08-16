@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng2-simple-timer": [
+        "dist/ng2-simple-timer"
+      ],
+      "ng2-simple-timer/*": [
+        "dist/ng2-simple-timer/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

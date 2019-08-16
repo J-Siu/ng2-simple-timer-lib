@@ -1,0 +1,33 @@
+{
+	"name": "ng2-simple-timer",
+	"version": "8.2.0",
+	"devDependencies": {
+		"angular2-uuid": "*"
+	},
+	"peerDependencies": {
+		"@angular/common": "^8.2.0",
+		"@angular/core": "^8.2.0",
+		"angular2-uuid": "*"
+	},
+	"description": "Angular simple timer service",
+	"author": {
+		"name": "John, Sing Dao, Siu",
+		"url": "https://github.com/J-Siu"
+	},
+	"bugs": {
+		"url": "https://github.com/J-Siu/ng2-simple-timer-lib/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/J-Siu/ng2-simple-timer-lib.git"
+	},
+	"keywords": [
+		"angular",
+		"ng",
+		"component",
+		"timer",
+		"example",
+		"simple"
+	],
+	"license": "MIT"
+}

@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "ng2-simple-timer": {
+      "projectType": "library",
+      "root": "projects/ng2-simple-timer",
+      "sourceRoot": "projects/ng2-simple-timer/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng2-simple-timer/tsconfig.lib.json",
+            "project": "projects/ng2-simple-timer/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng2-simple-timer/src/test.ts",
+            "tsConfig": "projects/ng2-simple-timer/tsconfig.spec.json",
+            "karmaConfig": "projects/ng2-simple-timer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng2-simple-timer/tsconfig.lib.json",
+              "projects/ng2-simple-timer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng2-simple-timer-lib"
 }
