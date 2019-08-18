@@ -1,9 +1,9 @@
-
 A simple timer service for Angular, base on RxJS.
+<!--more-->
 
 Name/ID(string) base API. RxJS object not exposed.
 
-> To enable faster update, ng2-simple-timer uses to Angular CLI starting 8.2.0 and new repository https://github.com/J-Siu/ng2-simple-timer-lib/ . Repository contains both library and example.
+> __ng2-simple-timer__ uses to Angular CLI starting 8.2.0. New repository https://github.com/J-Siu/ng2-simple-timer-lib/ contains both library and example.
 >
 > Version < 8.2.0 are in old repository https://github.com/J-Siu/ng2-simple-timer/
 
@@ -221,8 +221,10 @@ ng serve --open
   - Update version to match major version of Angular
 - 8.2.0
   - Support Angular 8.2.0
-  - Switch to Angular Cli for faster future update
-  - Include example in project
+  - Switch to Angular Cli for faster update
+  - Include example
+- 8.2.1
+  - README.md clean up
 
 ### License
 
