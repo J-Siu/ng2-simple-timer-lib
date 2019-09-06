@@ -15,6 +15,8 @@ Name/ID(string) base API. RxJS object not exposed.
   - [Component](#component)
 - [API](#api)
   - [newTimer](#newtimer)
+  - [newTimerCD](#newtimercd)
+  - [newTimerHR](#newtimerhr)
   - [delTimer](#deltimer)
   - [getTimer](#gettimer)
   - [getSubscription](#getsubscription)
@@ -66,6 +68,8 @@ export class ChildComponent {
 
 #### newTimer
 
+Create timer with optional delay start. Unit in second.
+
 `newTimer(name: string, sec: number, delay: boolan = false): boolean`
 
 `newTimer` will create timer `name` and tick every 'number' of seconds. Creating timer with the same name multiple times has no side effect.
@@ -77,6 +81,40 @@ Return `false` if timer `name` exist.
 ```javascript
 this.st.newTimer('5sec', 5);
 this.st.newTimer('5sec', 5, true);
+```
+
+#### newTimerCD
+
+Create timer with optional customer delay. Unit in second.
+
+`newTimerCD(name: string, sec: number, delay: number = 0): boolean`
+
+`newTimerCD` will create timer `name` and tick every 'number' of seconds. Creating timer with the same name multiple times has no side effect.
+
+`delay`: If set to X, will delay the 1st tick for X seconds.
+
+Return `false` if timer `name` exist.
+
+```javascript
+this.st.newTimerCD('5sec', 5);
+this.st.newTimerCD('5sec', 5, 10);
+```
+
+#### newTimerHR
+
+Create High Resolution timer with optional customer delay. Unit in millisecond.
+
+`newTimerHR(name: string, msec: number, delay: number = 0): boolean`
+
+`newTimerHR` will create timer `name` and tick every 'number' of milliseconds. Creating timer with the same name multiple times has no side effect.
+
+`delay`: If set to X, will delay the 1st tick for X milliseconds.
+
+Return `false` if timer `name` exist.
+
+```javascript
+this.st.newTimerHR('5ms', 5);
+this.st.newTimerHR('5ms', 5, 10);
 ```
 
 #### delTimer
@@ -225,6 +263,10 @@ ng serve --open
   - Include example
 - 8.2.1
   - README.md clean up
+- 8.2.2
+  - New APIs
+    - `newTimerCD` Create timer with optional custom delay start. Unit in second.
+    - `newTimerHR` Create timer with optional custom delay start. Unit in millisecond.
 
 ### License
 

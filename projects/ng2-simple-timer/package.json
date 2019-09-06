@@ -1,6 +1,6 @@
 {
 	"name": "ng2-simple-timer",
-	"version": "8.2.1",
+	"version": "8.2.2",
 	"devDependencies": {
 		"angular2-uuid": "*"
 	},
