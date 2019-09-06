@@ -42,6 +42,24 @@ export class SimpleTimer {
 		this.timers[name] = { second: sec, t: t };
 		return true;
 	}
+	newTimerCD(name: string, sec: number, delay: number = 0): boolean {
+		if (name === undefined || sec === undefined || this.timers[name]) {
+			return false;
+		}
+		let t: Observable<any>
+		t = timer(delay * 1000, sec * 1000);
+		this.timers[name] = { second: sec, t: t };
+		return true;
+	}
+	newTimerHR(name: string, msec: number, delay: number = 0): boolean {
+		if (name === undefined || msec === undefined || this.timers[name]) {
+			return false;
+		}
+		let t: Observable<any>
+		t = timer(delay, msec);
+		this.timers[name] = { second: msec, t: t };
+		return true;
+	}
 	delTimer(name: string): boolean {
 		if (name === undefined || !this.timers[name]) {
 			return false;
