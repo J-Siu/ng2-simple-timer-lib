@@ -1,6 +1,6 @@
 {
   "name": "ng2-simple-timer-lib",
-  "version": "8.2.2",
+  "version": "9.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
