@@ -42,7 +42,7 @@ __ng2-simple-timer__ is implemented as Angular injectable service name __SimpleT
 
 #### Module
 
-Add `SimpleTimer` into module providers (eg. [app.module.ts](https://github.com/J-Siu/ng2-simple-timer-example/blob/master/app/app.module.ts)).
+Add `SimpleTimer` into module providers (eg. [app.module.ts](https://github.com/J-Siu/ng2-simple-timer-example/blob/master/app/app.module.ts).
 
 ```javascript
 import { SimpleTimer } from 'ng2-simple-timer';
