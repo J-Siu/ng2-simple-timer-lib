@@ -1,12 +1,12 @@
 {
 	"name": "ng2-simple-timer",
-	"version": "9.1.0",
+	"version": "11.2.9",
 	"devDependencies": {
 		"angular2-uuid": "*"
 	},
 	"peerDependencies": {
-		"@angular/common": "~9.1.0",
-		"@angular/core": "~9.1.0",
+    "@angular/common": "^11.2.9",
+    "@angular/core": "^11.2.9",
 		"angular2-uuid": "*"
 	},
 	"description": "Angular simple timer service",

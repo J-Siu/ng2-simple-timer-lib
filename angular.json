@@ -127,7 +127,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ng2-simple-timer/tsconfig.lib.json",
             "project": "projects/ng2-simple-timer/ng-package.json"

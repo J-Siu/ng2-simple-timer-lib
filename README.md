@@ -269,6 +269,8 @@ ng serve --open
     - `newTimerHR` Create timer with optional custom delay start. Unit in millisecond.
 - 9.1.0
   - Support Angular 9.1.0
+- 11.2.9
+  - Support Angular 11.2.9
 
 ### License
 
