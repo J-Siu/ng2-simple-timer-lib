@@ -1,3 +1,5 @@
+# Angular Simple Timer [![Paypal donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?business=HZF49NM9D35SJ&no_recurring=0&currency_code=CAD)
+
 A simple timer service for Angular, base on RxJS.
 <!--more-->
 
@@ -7,6 +9,7 @@ Name/ID(string) base API. RxJS object not exposed.
 >
 > Version < 8.2.0 are in old repository [github.com/J-Siu/ng2-simple-timer](//github.com/J-Siu/ng2-simple-timer/)
 
+### Table Of Content
 <!-- TOC -->
 
 - [Install](#install)
@@ -70,7 +73,7 @@ export class ChildComponent {
 
 Create timer with optional delay start. Unit in second.
 
-`newTimer(name: string, sec: number, delay: boolan = false): boolean`
+`newTimer(name: string, sec: number, delay: boolean = false): boolean`
 
 `newTimer` will create timer `name` and tick every 'number' of seconds. Creating timer with the same name multiple times has no side effect.
 
